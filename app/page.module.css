@@ -69,6 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   padding: 40px 20px;
   background-color: #060e16;
 }
@@ -81,8 +82,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin: auto;
   padding: 30px 15px;
-  /* background-color: #031322; */
   background-color: #031322;
 }
 .about .card > div {
@@ -232,7 +233,8 @@
   width: 100%;
   background: linear-gradient(#010d14, #010d14f3), url(/images/background.jpeg);
   padding: 20px;
-  height: 650px;
+  height: auto;
+  padding-bottom: 60px;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -403,4 +405,46 @@
 .contact form textarea::placeholder {
   color: white;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+  .header ul li {
+    display: none;
+  }
+  .hero {
+    height: 550px;
+  }
+  .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.57);
+  }
+  .about {
+    padding: 40px 10px;
+  }
+  .about .card {
+    width: 100%;
+  }
+  .about .card p {
+    padding-right: 0;
+  }
+  .about .card > div {
+    flex: 100%;
+    height: auto;
+    margin: 20px 0px;
+  }
+  .meProfile {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    font-weight: lighter !important;
+  }
+  .meProfile > div {
+    margin: 15px 0;
+  }
+  .portfolio .grid > div {
+    min-width: 250px;
+    height: 290px;
+    margin: 40px 0;
+  }
 }
