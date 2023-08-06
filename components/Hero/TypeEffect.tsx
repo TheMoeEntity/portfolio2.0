@@ -26,7 +26,7 @@ const TypeEffect = () => {
           .typeString("Chemical Engineer.")
           .pauseFor(1000)
           .deleteAll()
-          .typeString("Cool guy 😎")
+          .typeString("Cool guy")
           .pauseFor(2500)
           .start();
       }}
