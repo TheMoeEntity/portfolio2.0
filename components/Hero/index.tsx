@@ -4,11 +4,52 @@ import styles from "../../app/page.module.css";
 import me from "../../public/images/2.jpg";
 import TypeEffect from "./TypeEffect";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 const Hero = () => {
+  const router = useRouter();
+  const [sidebar, setSideBar] = useState<boolean>(false);
+  const openSideBar = () => {
+    setSideBar(!sidebar);
+  };
+  const linkAction = (section: string) => {
+    setSideBar(false);
+    router.push(section);
+  };
   return (
     <div className={styles.hero}>
-      <div className={styles.hamburger}>
+      <div
+        style={{ opacity: sidebar ? "0" : "1" }}
+        onClick={openSideBar}
+        className={styles.hamburger}
+      >
         <i className="fa-solid fa-bars"></i>
+      </div>
+
+      <div
+        style={{ left: sidebar ? "0%" : "-100%" }}
+        className={styles.sidecontent}
+      >
+        <div onClick={() => setSideBar(false)} className={styles.close}>
+          &times;
+        </div>
+        <ul>
+          <li onClick={() => linkAction("/")}>
+            <i className="fa-solid fa-house"></i> Home
+          </li>
+          <li onClick={() => linkAction("/#about")}>
+            <i className="fa-solid fa-user"></i>About
+          </li>
+          <li onClick={() => linkAction("/#services")}>
+            <i className="fa-solid fa-gear"></i>Services
+          </li>
+          <li onClick={() => linkAction("/#portfolio")}>
+            <i className="fa-solid fa-briefcase"></i>Portfolio
+          </li>
+          <li onClick={() => linkAction("/#contact")}>
+            <i className="fa-solid fa-envelope"></i>Contact
+          </li>
+        </ul>
       </div>
       <div className={styles.socials}>
         <a
