@@ -34,7 +34,7 @@ const Contact = () => {
               <i className="fa fa-map-marker"></i>
             </div>
             <div className={styles.linkDetails}>
-              Cooperative villas estate, Badore, Ajah , Lagos.
+              Cooperative villas estate, Badore, <br /> Ajah , Lagos.
             </div>
           </div>
           <div>

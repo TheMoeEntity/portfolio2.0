@@ -541,6 +541,43 @@
   .sidebar {
     left: -100%;
   }
+  .projects > div {
+    width: 95%;
+  }
+  .projects > div > div {
+    justify-content: space-between;
+    text-align: left;
+  }
+  .contact {
+    width: 100%;
+    padding: 40px 10px;
+  }
+  .contact .grid {
+    flex-flow: column wrap;
+  }
+  .contact .grid > div {
+    flex: 100%;
+    margin: 30px 10px;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .linkDetails {
+    padding: 0 20px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactLinks > div {
+    width: 100%;
+    height: 80px;
+  }
+  .contact .grid .icons {
+    width: 80px;
+    height: 80px;
+  }
+
   .hero {
     height: 100vh;
   }
