@@ -1,6 +1,34 @@
 .main {
   min-height: 100vh;
 }
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition: 0.5s;
+}
+.sidebar > div.active {
+  background-color: #0078ff;
+  color: #f2f3f5;
+}
+.sidebar > div {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f3f5;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin: 10px 0;
+  color: #0078ff;
+}
 .hero {
   width: 100%;
   height: 700px;
@@ -17,13 +45,15 @@
   color: white;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(0, 0, 0, 0.67);
   z-index: 1;
 }
 .banner {
   width: 100%;
   height: 100%;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero img {
@@ -158,8 +188,6 @@
   background-color: #0078ff;
   width: 70%;
   height: 100%;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 /* //==--------------------------- SERVICES ------------------------------ // */
 .projects {
@@ -314,7 +342,9 @@
   background-position: center;
   background-size: cover;
   background: #031323;
+  /* background: linear-gradient(#031323, #031323f1), url(/images/home-bg.jpeg); */
   padding-bottom: 100px;
+  background-attachment: fixed;
 }
 .contact h3 {
   color: white;
@@ -410,6 +440,9 @@
 @media screen and (max-width: 600px) {
   .header ul li {
     display: none;
+  }
+  .sidebar {
+    left: -100%;
   }
   .hero {
     height: 550px;

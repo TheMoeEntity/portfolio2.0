@@ -18,7 +18,7 @@ const Contact = () => {
   };
   useEffect(resizeTextArea, [val]);
   return (
-    <div className={styles.contact}>
+    <div id="contact" className={styles.contact}>
       <h3>GET IN TOUCH</h3>
       <h2>CONTACT</h2>
       <div className={styles.grid}>

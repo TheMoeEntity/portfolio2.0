@@ -3,7 +3,7 @@ import styles from "../../app/page.module.css";
 
 const Services = () => {
   return (
-    <div className={styles.proj}>
+    <div id="services" className={styles.proj}>
       <h2>WHAT I DO?</h2>
       <div className={styles.projects}>
         <div>

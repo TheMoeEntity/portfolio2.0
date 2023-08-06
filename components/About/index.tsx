@@ -6,7 +6,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <div id="about" className={styles.about}>
       <ParallaxProvider>
         <Parallax speed={-5}>
           <div className={styles.card}>

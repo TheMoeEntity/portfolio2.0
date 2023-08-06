@@ -6,7 +6,7 @@ import me from "../../public/images/dove.png";
 
 const Portfolio = () => {
   return (
-    <div className={styles.portfolio}>
+    <div id="portfolio" className={styles.portfolio}>
       <h2>PORTFOLIO</h2>
       <h3>Some of the projects are from work and some are on my own time.</h3>
       <div className={styles.grid}>

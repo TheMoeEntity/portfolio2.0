@@ -8,7 +8,44 @@ export type assets = {
   title: string;
   date: string;
 };
-
+export type sideAssets = {
+  title: string;
+  active: boolean;
+  id: number;
+  link: string;
+};
+export const sideassets: sideAssets[] = [
+  {
+    title: "fa-solid fa-house",
+    active: true,
+    id: 1,
+    link: "/",
+  },
+  {
+    title: "fa-solid fa-user",
+    active: false,
+    id: 2,
+    link: "/#about",
+  },
+  {
+    title: "fa-solid fa-gear",
+    active: false,
+    id: 3,
+    link: "/#services",
+  },
+  {
+    title: "fa-solid fa-briefcase",
+    active: false,
+    id: 4,
+    link: "/#portfolio",
+  },
+  {
+    title: "fa-solid fa-envelope",
+    active: false,
+    id: 5,
+    link: "/#contact",
+  },
+];
 export const assets: assets[] = [
   {
     image: pepnops,
