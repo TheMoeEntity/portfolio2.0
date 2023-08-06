@@ -7,6 +7,46 @@ import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 const Hero = () => {
   return (
     <div className={styles.hero}>
+      <div className={styles.hamburger}>
+        <i className="fa-solid fa-bars"></i>
+      </div>
+      <div className={styles.socials}>
+        <a
+          target={`_blank`}
+          rel="noopener noreferrer"
+          href="https://twitter.com/NMoses_"
+        >
+          <i className="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          target={`_blank`}
+          rel="noopener noreferrer"
+          href="https://instagram.com/NC_Moses"
+        >
+          <i className="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          target={`_blank`}
+          rel="noopener noreferrer"
+          href="https://wa.me/+2348075489362"
+        >
+          <i className="fa-brands fa-whatsapp"></i>
+        </a>
+        <a
+          target={`_blank`}
+          rel="noopener noreferrer"
+          href="https://github.com/TheMoeEntity"
+        >
+          <i className="fa-brands fa-github"></i>
+        </a>
+        <a
+          target={`_blank`}
+          rel="noopener noreferrer"
+          href="https://web.facebook.com/Moses.Nwigberi/"
+        >
+          <i className="fa-brands fa-facebook"></i>
+        </a>
+      </div>
       <ParallaxProvider>
         <ParallaxBanner
           layers={[{ image: "/images/2.jpg", speed: -30 }]}
