@@ -9,7 +9,7 @@ import { useAnimation } from "@/Helpers/useAnimation";
 
 const About = () => {
   const grid = useRef<null | HTMLDivElement>(null);
-  useAnimation(grid, styles.animateIn, true);
+  useAnimation(grid, styles.animateIn, false);
   return (
     <div id="about" className={styles.about}>
       <ParallaxProvider>
