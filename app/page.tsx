@@ -6,13 +6,13 @@ import { Helpers } from "@/Helpers";
 import styles from "./page.module.css";
 
 export default async function Home() {
-  const data = await Helpers.fetcher();
+  // const data = await Helpers.fetcher();
   return (
     <main className={styles.main}>
       <Hero />
       <About />
       <Services />
-      <Portfolio data={data} />
+      <Portfolio />
     </main>
   );
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../../app/page.module.css";
 
-const Portfolio = ({ data }: any) => {
+const Portfolio = () => {
   return (
     <div id="portfolio" className={styles.portfolio}>
       <h2>PORTFOLIO</h2>
