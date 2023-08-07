@@ -11,6 +11,15 @@ export type assets = {
   title: string;
   date: string;
 };
+export type portfolioData = {
+  name: string;
+  url: string;
+  stack: string[];
+  date: string;
+  id: number;
+  images: StaticImageData[];
+  details: string[];
+};
 export type sideAssets = {
   title: string;
   active: boolean;
@@ -62,7 +71,7 @@ export const assets: assets[] = [
   },
   {
     image: mlaw,
-    title: "Nosrati Law Group",
+    title: "Nosrati Group",
     date: "03 Jun. 2023",
   },
   {
@@ -81,3 +90,19 @@ export const assets: assets[] = [
     date: "03 Jun. 2023",
   },
 ];
+export class Helpers {
+  static filterText = (text: string): string => {
+    const index = text.indexOf("%");
+    const endStr = text.substring(index + 3, text.length);
+    return text
+      .split("")
+      .filter((x) => x !== "%" && x !== "2" && x !== "0")
+      .join("")
+      .substring(0, index)
+      .concat(" " + endStr);
+  };
+  static fetcher = async () =>
+    await fetch("http://localhost:3000/api/staticData").then((res) =>
+      res.json()
+    );
+}

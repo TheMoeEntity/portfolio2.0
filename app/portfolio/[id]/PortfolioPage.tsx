@@ -4,6 +4,7 @@ import aman from "../../../public/images/craw.png";
 import React, { CSSProperties } from "react";
 import styles from "../../../app/page.module.css";
 import Link from "next/link";
+import { Helpers } from "@/Helpers";
 const heroStyles: CSSProperties = {
   width: "100%",
   height: "400px",
@@ -14,7 +15,7 @@ const heroStyles: CSSProperties = {
   fontWeight: "200",
   padding: "70px",
   position: "relative",
-  backgroundAttachment: "fixed",
+  // backgroundAttachment: "fixed",
   backgroundPosition: "bottom",
 };
 const overlay: CSSProperties = {
@@ -28,7 +29,7 @@ const detail: CSSProperties = {
   width: "100%",
   // height: "700px",
   background: "#060e16",
-  padding: "60px 20px",
+  padding: "60px 0px",
 };
 const PortfolioPage = ({ title }: { title: string }) => {
   return (
@@ -38,10 +39,9 @@ const PortfolioPage = ({ title }: { title: string }) => {
         <h1 style={{ fontSize: "40px", width: "100%" }}>Portfolio Details</h1>
         <h2>
           <span>
-            {" "}
             <Link href={"/"}>home</Link>{" "}
           </span>
-          / Portfolio Details / <i>{title}</i>
+          / Portfolio Details / {Helpers.filterText(title)}
         </h2>
       </div>
       <div className={styles.details} style={detail}>
@@ -61,12 +61,10 @@ const PortfolioPage = ({ title }: { title: string }) => {
         <div className={styles.portdetails}>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              architecto, perferendis suscipit repudiandae quos facilis nemo
-              voluptas sunt fuga, porro maxime. Omnis neque architecto
-              reprehenderit aspernatur quaerat. Eius reiciendis ut totam
-              consequuntur atque, dolorum ad quaerat ex vitae. Inventore
-              delectus <br /> <br />
+              Crawford Hostel Complaints Management system is a CRUD platform
+              that provides solutions to student complaints in various hostels.
+              The backend is powered by Django REST framework and a PostgreSQL
+              database. <br /> <br />
               tenetur asperiores eaque magnam distinctio culpa itaque fugit,
               suscipit quisquam eveniet placeat dolore fugiat labore amet quia
               numquam voluptate, doloremque consequuntur laudantium dolorem? A

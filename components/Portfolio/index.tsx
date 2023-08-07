@@ -1,17 +1,16 @@
 "use client";
-import { assets } from "@/Helpers";
+import { assets, portfolioData } from "@/Helpers";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../app/page.module.css";
-import me from "../../public/images/dove.png";
 
-const Portfolio = () => {
+const Portfolio = ({ data }: any) => {
   return (
     <div id="portfolio" className={styles.portfolio}>
       <h2>PORTFOLIO</h2>
       <h3>Some of the projects are from work and some are on my own time.</h3>
       <div className={styles.grid}>
-        {assets.map((x, i) => (
+        {assets.map((x, i: number) => (
           <div key={i}>
             <div className={styles.img}>
               <Image

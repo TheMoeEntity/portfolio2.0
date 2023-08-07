@@ -1,0 +1,87 @@
+[
+  {
+    "name": "PEPNOPS Inc.",
+    "url": "https://pepnops.vercel.app",
+    "stack": ["NextJs", "NodeMailer", "TypeScript"],
+    "date": "14th July, 2023",
+    "id": 1,
+    "images": ["mlaw.png", "craw.png", "craw.png"],
+    "details": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
+      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
+      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+    ]
+  },
+  {
+    "name": "Nosrati Group",
+    "url": "https://mlawsite.vercel.app",
+    "stack": ["NextJs", "NodeMailer", "react-slider"],
+    "date": "14th July, 2023",
+    "id": 0,
+    "images": ["mlaw.png", "craw.png", "craw.png"],
+    "details": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
+      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
+      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+    ]
+  },
+  {
+    "name": "Crawford Complaints",
+    "url": "https://crawfordcomplaints.vercel.app",
+    "stack": [
+      "NextJs",
+      "TypeScript",
+      "Django",
+      "postgreSQL",
+      "Next-auth",
+      "OpenAI"
+    ],
+    "date": "28th July, 2023",
+    "id": 2,
+    "images": ["craw.png", "craw.png", "craw.png"],
+    "details": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
+      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
+      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+    ]
+  },
+  {
+    "name": "Apple E-commerce Store",
+    "url": "https://moestores.vercel.app",
+    "stack": ["NextJs", "JWT auth", "Framer-motion", "Sanity.io", "Cookies"],
+    "date": "29th August, 2023",
+    "id": 3,
+    "images": ["store.png", "craw.png", "craw.png"],
+    "details": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
+      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
+      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+    ]
+  },
+  {
+    "name": "Dove Hospital",
+    "url": "https://dovehospital.com",
+    "stack": ["HTML", "CSS", "JavaScript", "PHP"],
+    "date": "28th August, 2020",
+    "id": 4,
+    "images": ["dove.png", "craw.png", "craw.png"],
+    "details": [
+      "Lorem ipsum dolor sit amet consectetur  adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
+      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
+      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+    ]
+  },
+  {
+    "name": "AMAN Awardss",
+    "url": "https://aman-awards.vercel.app",
+    "stack": ["NextJs", "Tailwindcss", "react-slider"],
+    "date": "14th August, 2023",
+    "id": 5,
+    "images": ["aman.png", "craw.png", "craw.png"],
+    "details": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
+      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
+      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+    ]
+  }
+]
