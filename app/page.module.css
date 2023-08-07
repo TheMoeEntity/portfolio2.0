@@ -177,36 +177,52 @@
   align-items: center;
   overflow: hidden;
   padding: 40px 20px;
-  background-color: #060e16;
+  transition: 0.5s;
+  background-color: var(--main);
 }
 .about .card {
   width: 90%;
-  /* background-color: #eee;
-  box-shadow: 5px 9px 10px 0 rgba(143, 143, 143, 0.1),
-    2.5px 9px 10px 0 rgba(143, 143, 143, 0.25); */
+  transition: 0.5s;
+  box-shadow: var(--shadow-color);
   transition: 0.5s;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: auto;
   padding: 30px 15px;
-  background-color: #031322;
+  overflow-x: hidden;
+  background-color: var(--main-secondary);
 }
 .about .card > div {
   flex: 40%;
   height: auto;
   margin: 0 20px;
 }
+.about .card > div:nth-child(1).animateIn,
+.about .card > div:nth-child(2).animateIn {
+  opacity: 1;
+  transform: none;
+}
+.about .card > div:nth-child(2) {
+  transform: translate(200px);
+  transition: 0.5s;
+  opacity: 0;
+}
+.about .card > div:nth-child(1) {
+  transform: translate(-200px);
+  transition: 0.5s;
+  opacity: 0;
+}
 .about .card > div:nth-child(2) h2 {
   border-bottom: 4px solid #0078ff;
   padding-bottom: 10px;
   width: fit-content;
   font-size: 30px;
-  color: white;
+  color: var(--text-color);
   margin-bottom: 40px;
 }
 .about .card p {
-  color: #fff;
+  color: var(--text-color);
   line-height: 1.5;
   font-size: small;
   padding-right: 10px;
@@ -228,7 +244,7 @@
   display: block;
   margin: 12px 0;
   font-size: 15.5px;
-  color: #fff;
+  color: var(--text-color);
 }
 .deets > span {
   font-weight: 700;
@@ -243,14 +259,14 @@
   border-radius: 10px;
 }
 .about h3 {
-  color: #fff;
+  color: var(--text-color);
   padding: 30px 05px;
 }
 .skillGroup {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
-  color: white;
+  color: var(--text-color);
   margin: 7px 0;
 }
 .skillGroup span {
@@ -273,15 +289,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #031322;
-  color: white;
+  background-color: var(--main-secondary);
+  color: var(--text-color);
 }
 .proj {
   width: 100%;
   height: auto;
   padding: 60px 0;
-  background-color: #031322;
-  color: white;
+  background-color: var(--main-secondary);
+  color: var(--text-color);
 }
 .proj h2 {
   text-align: center;
@@ -423,20 +439,20 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background: #031323;
+  background: var(--main-secondary);
   /* background: linear-gradient(#031323, #031323f1), url(/images/home-bg.jpeg); */
   padding-bottom: 100px;
   background-attachment: fixed;
 }
 .contact h3 {
-  color: white;
+  color: var(--text-color);
   margin-bottom: 20px;
   font-weight: lighter;
   font-size: small;
 }
 .contact h2 {
   font-size: 26px;
-  color: white;
+  color: var(--text-color);
   border-bottom: 2px solid #0078ff;
   padding-bottom: 10px;
   width: fit-content;
@@ -474,7 +490,7 @@
   font-weight: lighter;
 }
 .contact .grid .icons {
-  background-color: #060e16;
+  background-color: var(--main);
   display: flex;
   align-items: center;
   justify-content: center;

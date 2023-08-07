@@ -90,6 +90,28 @@ export const assets: assets[] = [
     date: "03 Jun. 2023",
   },
 ];
+export const skills: { skill: string; width: string }[] = [
+  {
+    skill: "NextJs",
+    width: "95%",
+  },
+  {
+    skill: "ReactJs",
+    width: "90%",
+  },
+  {
+    skill: "Svelte",
+    width: "70%",
+  },
+  {
+    skill: "TypeScript",
+    width: "95%",
+  },
+  {
+    skill: "NodeJs",
+    width: "80%",
+  },
+];
 export class Helpers {
   static filterText = (text: string): string => {
     const index = text.indexOf("%");

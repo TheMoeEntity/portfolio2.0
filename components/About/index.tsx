@@ -3,35 +3,18 @@ import Image from "next/image";
 import styles from "../../app/page.module.css";
 import me from "../../public/images/mean.jpg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import { skills } from "@/Helpers";
+import { useRef } from "react";
+import { useAnimation } from "@/Helpers/useAnimation";
 
 const About = () => {
-  const skills: { skill: string; width: string }[] = [
-    {
-      skill: "NextJs",
-      width: "95%",
-    },
-    {
-      skill: "ReactJs",
-      width: "90%",
-    },
-    {
-      skill: "Svelte",
-      width: "70%",
-    },
-    {
-      skill: "TypeScript",
-      width: "95%",
-    },
-    {
-      skill: "NodeJs",
-      width: "80%",
-    },
-  ];
+  const grid = useRef<null | HTMLDivElement>(null);
+  useAnimation(grid, styles.animateIn, true);
   return (
     <div id="about" className={styles.about}>
       <ParallaxProvider>
         <Parallax speed={-5}>
-          <div className={styles.card}>
+          <div ref={grid} className={styles.card}>
             <div>
               <div className={styles.meProfile}>
                 <div>

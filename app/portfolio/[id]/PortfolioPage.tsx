@@ -15,7 +15,6 @@ const heroStyles: CSSProperties = {
   fontWeight: "200",
   padding: "70px",
   position: "relative",
-  // backgroundAttachment: "fixed",
   backgroundPosition: "bottom",
 };
 const overlay: CSSProperties = {
@@ -27,7 +26,6 @@ const overlay: CSSProperties = {
 };
 const detail: CSSProperties = {
   width: "100%",
-  // height: "700px",
   background: "#060e16",
   padding: "60px 0px",
 };
