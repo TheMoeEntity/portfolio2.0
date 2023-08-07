@@ -102,7 +102,7 @@ export class Helpers {
       .concat(" " + endStr);
   };
   static fetcher = async () =>
-    await fetch("http://localhost:3000/api/staticData").then((res) =>
-      res.json()
+    await fetch("https://mportfolio-seven.vercel.app/api/staticData").then(
+      (res) => res.json()
     );
 }
