@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { JsxElement } from "typescript";
 import { sideassets, sideAssets } from "@/Helpers";
 import Link from "next/link";
+import Contact from "./Contact";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
@@ -91,6 +92,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       </div>
       <Cursor />
       {children}
+      <Contact />
       <Script
         src="https://kit.fontawesome.com/4ef8c63dd7.js"
         crossOrigin="anonymous"

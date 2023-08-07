@@ -95,7 +95,7 @@ const Hero = () => {
         ></ParallaxBanner>
       </ParallaxProvider>
       <div className={styles.overlay}>
-        <h1 className={styles.name}>I am Moses Nwigberi</h1>
+        <h1 className={styles.name}> Moses C. Nwigberi</h1>
         <h1 className={styles.type}>
           <TypeEffect />
         </h1>

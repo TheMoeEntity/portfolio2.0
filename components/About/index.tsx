@@ -5,6 +5,28 @@ import me from "../../public/images/mean.jpg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 const About = () => {
+  const skills: { skill: string; width: string }[] = [
+    {
+      skill: "NextJs",
+      width: "95%",
+    },
+    {
+      skill: "ReactJs",
+      width: "90%",
+    },
+    {
+      skill: "Svelte",
+      width: "70%",
+    },
+    {
+      skill: "TypeScript",
+      width: "95%",
+    },
+    {
+      skill: "NodeJs",
+      width: "80%",
+    },
+  ];
   return (
     <div id="about" className={styles.about}>
       <ParallaxProvider>
@@ -41,30 +63,14 @@ const About = () => {
                 </div>
               </div>
               <h3>SKILLS</h3>
-              <div className={styles.skillGroup}>
-                <span>NextJS</span> <br />
-                <div className={styles.bar}>
-                  <div></div>
+              {skills.map((x, i) => (
+                <div key={i} className={styles.skillGroup}>
+                  <span>{x.skill}</span> <br />
+                  <div className={styles.bar}>
+                    <div style={{ width: x.width }}></div>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>React</span> <br />
-                <div className={styles.bar}>
-                  <div></div>
-                </div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>TypeScript</span> <br />
-                <div className={styles.bar}>
-                  <div></div>
-                </div>
-              </div>
-              <div className={styles.skillGroup}>
-                <span>NodeJs</span> <br />
-                <div className={styles.bar}>
-                  <div></div>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div>

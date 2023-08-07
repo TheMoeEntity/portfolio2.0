@@ -2,6 +2,9 @@ import { StaticImageData } from "next/image";
 import pepnops from "../public/images/pepnops.png";
 import dove from "../public/images/dove.png";
 import mlaw from "../public/images/mlaw.png";
+import aman from "../public/images/aman.png";
+import craw from "../public/images/craw.png";
+import store from "../public/images/store.png";
 
 export type assets = {
   image: StaticImageData;
@@ -60,6 +63,21 @@ export const assets: assets[] = [
   {
     image: mlaw,
     title: "Nosrati Law Group",
+    date: "03 Jun. 2023",
+  },
+  {
+    image: aman,
+    title: "AMAN AWARDS",
+    date: "03 Jun. 2023",
+  },
+  {
+    image: craw,
+    title: "Crawford Complaints",
+    date: "03 Jun. 2023",
+  },
+  {
+    image: store,
+    title: "Apple E-commerce store",
     date: "03 Jun. 2023",
   },
 ];

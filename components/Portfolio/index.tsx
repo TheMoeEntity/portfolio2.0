@@ -1,6 +1,7 @@
 "use client";
 import { assets } from "@/Helpers";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../../app/page.module.css";
 import me from "../../public/images/dove.png";
 
@@ -27,9 +28,11 @@ const Portfolio = () => {
                 <h3>{x.title} </h3>
                 <b>Web /</b> {x.date}
               </div>
-              <div className={styles.link}>
-                <i className="fa-solid fa-plus"></i>
-              </div>
+              <Link href={`/portfolio/${x.title}`}>
+                <div className={styles.link}>
+                  <i className="fa-solid fa-plus"></i>
+                </div>
+              </Link>
             </div>
           </div>
         ))}

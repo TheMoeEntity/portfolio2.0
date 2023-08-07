@@ -69,9 +69,12 @@
 }
 .hero {
   width: 100%;
-  height: 700px;
+  height: 100vh;
   position: relative;
-  background-position: right;
+  /* background-position: left;
+  background: url(/images/2.jpg);
+  background-size: cover;
+  background-attachment: fixed; */
 }
 .hero .overlay {
   width: 100%;
@@ -256,6 +259,7 @@
 .skillGroup .bar {
   background-color: #cde2f8;
   height: 10px;
+  transition: 0.5s;
 }
 .skillGroup .bar > div {
   background-color: #0078ff;
@@ -366,14 +370,19 @@
 }
 .portfolio .grid > div {
   flex: 28%;
-  height: 360px;
+  height: 300px;
   margin: 10px 13px;
   background-color: white;
+  overflow: hidden;
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.portfolio .grid > div:hover .portfolio .grid > div .img img {
+  transform: scale(1.05);
 }
 .portfolio .grid > div .img {
   width: 100%;
   height: 70%;
+  transition: 0.7s;
   position: relative;
 }
 .img img {
@@ -510,6 +519,85 @@
   font-weight: lighter;
 }
 
+/* //==--------------------------- PORTFOLIO DETAILS ------------------------------ // */
+.port h2 {
+  font-weight: lighter;
+  font-weight: 22px;
+  margin-top: 50px;
+}
+.port h2 span {
+  color: #0078ff;
+}
+.screen {
+  position: relative;
+  width: calc(0.65 * 1028px);
+  height: calc(0.65 * 696px);
+  background: url(/images/screen4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0px auto;
+}
+.monitor {
+  width: calc(0.5 * 1028px);
+  height: 350px;
+  position: absolute;
+  top: 15px;
+  left: 77px;
+}
+.portdetails {
+  display: flex;
+  width: 90%;
+  padding: 20px;
+  margin: 40px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.portdetails > div {
+  margin: 30px 10px;
+}
+.portdetails > div:nth-child(2) {
+  flex: 35%;
+  background-color: #031324;
+  height: 300px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 18px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 18px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px -7px rgba(0, 0, 0, 0.75);
+}
+.portdetails ul li {
+  list-style-type: none;
+  margin: 20px 10px;
+  padding-left: 30px;
+  font-weight: lighter;
+  font-size: small;
+  line-height: 1.7;
+}
+.portdetails ul li span {
+  color: #0078ff;
+}
+.portdetails > div:nth-child(2) h2 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: fit-content;
+  margin: auto;
+  border-bottom: 0.1px solid #f2f3f525;
+}
+.portdetails > div:nth-child(1) {
+  flex: 50%;
+  /* background-color: #031324; */
+  color: white;
+}
+.portdetails > div:nth-child(1) p {
+  font-size: small;
+  font-weight: lighter;
+  text-align: justify;
+  padding: 30px;
+}
+
 @media screen and (max-width: 600px) {
   .name {
     position: absolute;
@@ -611,7 +699,7 @@
   }
   .portfolio .grid > div {
     min-width: 250px;
-    height: 290px;
+    height: 250px;
     margin: 41px 0;
   }
 }
