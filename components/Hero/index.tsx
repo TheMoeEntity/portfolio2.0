@@ -90,7 +90,7 @@ const Hero = () => {
       </div>
       <ParallaxProvider>
         <ParallaxBanner
-          layers={[{ image: "/images/2.jpg", speed: -30 }]}
+          layers={[{ image: "/images/me4.jpg", speed: -30 }]}
           className={`aspect-[2/1] ${styles.banner}`}
         ></ParallaxBanner>
       </ParallaxProvider>

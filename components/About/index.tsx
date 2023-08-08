@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "../../app/page.module.css";
-import me from "../../public/images/mean.jpg";
+import me from "../../public/images/me2.jpg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import { skills } from "@/Helpers";
 import { useRef } from "react";
