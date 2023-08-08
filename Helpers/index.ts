@@ -5,7 +5,15 @@ import mlaw from "../public/images/mlaw.png";
 import aman from "../public/images/aman.png";
 import craw from "../public/images/craw.png";
 import store from "../public/images/store.png";
-
+import { FormEvent } from "react";
+import axios from "axios";
+export type replacements = {
+  name: string;
+  message: string;
+  subject: string;
+  email: string;
+  greeting?: string;
+};
 export type assets = {
   image: StaticImageData;
   title: string;
@@ -127,4 +135,94 @@ export class Helpers {
     await fetch("https://mportfolio-seven.vercel.app/api/staticData").then(
       (res) => res.json()
     );
+  static setGreeting = (): string => {
+    const hour = new Date().getHours();
+
+    let timeCheck =
+      hour < 12
+        ? "Good Morning"
+        : hour < 18
+        ? "Good Afternoon"
+        : "Good Evening";
+
+    return timeCheck;
+  };
+
+  static sendMail = async (
+    setStatus: any,
+    setVal: any,
+    val: string,
+    e: FormEvent<HTMLFormElement>,
+    enqueueSnackbar: any
+  ) => {
+    e.preventDefault();
+    const data = {
+      fullName: (
+        e.target[
+          0 as unknown as keyof typeof e.target
+        ] as unknown as HTMLInputElement
+      ).value,
+      email: (
+        e.target[
+          1 as unknown as keyof typeof e.target
+        ] as unknown as HTMLInputElement
+      ).value,
+      subject: (
+        e.target[
+          2 as unknown as keyof typeof e.target
+        ] as unknown as HTMLInputElement
+      ).value,
+      message: val,
+    };
+
+    if (data.fullName.trim() === "") {
+      enqueueSnackbar("Full name cannot be empty", {
+        variant: "error",
+      });
+      return;
+    } else if (data.subject === "") {
+      enqueueSnackbar("Subject cannot be empty", {
+        variant: "error",
+      });
+      return;
+    } else if (
+      val === "" ||
+      data.message.trim() === "" ||
+      data.message.length < 10
+    ) {
+      enqueueSnackbar("Message cannot be empty or short", {
+        variant: "error",
+      });
+      return;
+    }
+
+    setStatus("SENDING....");
+    try {
+      const url = "/api/contact";
+      const res = await axios.post(url, data);
+
+      res.status === 200 &&
+        enqueueSnackbar("Message successfully sent", {
+          variant: "success",
+        });
+      console.log(res.status);
+      console.log(res);
+      setStatus("Sent successfully");
+      setTimeout(() => {
+        const resetForm = e.target as HTMLFormElement;
+        resetForm.reset();
+        setVal("");
+      }, 3000);
+    } catch (error) {
+      setStatus("...Error sending message");
+      enqueueSnackbar(
+        "There was an error sending message, try again: " + error,
+        {
+          variant: "error",
+        }
+      );
+      console.log(error);
+    }
+    setStatus("SEND MESSAGE");
+  };
 }

@@ -1,22 +1,18 @@
 "use client";
-import { assets } from "@/Helpers";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { assets, Helpers } from "@/Helpers";
+import { useResise } from "@/Helpers/useResise";
+import axios from "axios";
+import { useSnackbar } from "notistack";
+import { FormEvent, useRef, useState } from "react";
 import styles from "../../app/page.module.css";
-import me from "../../public/images/dove.png";
 
 const Contact = () => {
   const [val, setVal] = useState("");
+  const { enqueueSnackbar } = useSnackbar();
+  const [status, setStatus] = useState("SEND MESSAGE");
   const textAreaRef = useRef<HTMLTextAreaElement | null>(null);
+  useResise(textAreaRef, val);
 
-  const resizeTextArea = () => {
-    if (textAreaRef.current) {
-      textAreaRef.current.style.height = "auto";
-      textAreaRef.current.style.height =
-        textAreaRef.current.scrollHeight + "px";
-    }
-  };
-  useEffect(resizeTextArea, [val]);
   return (
     <div id="contact" className={styles.contact}>
       <h3>GET IN TOUCH</h3>
@@ -47,9 +43,14 @@ const Contact = () => {
         <div>
           <h3>Contact me</h3>
           <h2>Got an upcoming project?</h2>
-          <form action="">
+          <form
+            action=""
+            onSubmit={(e) =>
+              Helpers.sendMail(setStatus, setVal, val, e, enqueueSnackbar)
+            }
+          >
             <input type="text" placeholder="Name" />
-            <input type="email" placeholder="EMail" />
+            <input type="email" required placeholder="Email" />
             <input type="text" placeholder="Subject" />
             <textarea
               className={styles.textArea}
@@ -62,7 +63,15 @@ const Contact = () => {
               onChange={(e) => setVal(e.target.value)}
               rows={6}
             ></textarea>
-            <button>SEND MESSAGE</button>
+            <button type="submit">
+              {status !== "SEND MESSAGE" && (
+                <i
+                  className={`fa fa-spinner ${styles.spinning}`}
+                  aria-hidden="true"
+                ></i>
+              )}
+              {status}
+            </button>
           </form>
         </div>
       </div>

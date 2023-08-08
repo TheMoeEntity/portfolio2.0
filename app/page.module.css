@@ -538,8 +538,25 @@
 .contact form textarea::placeholder {
   color: var(--text-color);
   font-weight: lighter;
+  font-size: small;
 }
-
+.spinning {
+  animation: rotation 1.5s infinite linear;
+  margin-right: 10px;
+  height: fit-content;
+  color: #0078ff;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
 /* //==--------------------------- PORTFOLIO DETAILS ------------------------------ // */
 .port h2 {
   font-weight: lighter;
