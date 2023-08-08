@@ -26,7 +26,7 @@ const overlay: CSSProperties = {
 };
 const detail: CSSProperties = {
   width: "100%",
-  background: "#060e16",
+  background: "var(--main)",
   padding: "60px 0px",
 };
 const PortfolioPage = ({ title }: { title: string }) => {
