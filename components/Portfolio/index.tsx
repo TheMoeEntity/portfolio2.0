@@ -1,15 +1,19 @@
 "use client";
 import { assets, portfolioData } from "@/Helpers";
+import { useAnimation } from "@/Helpers/useAnimation";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
 import styles from "../../app/page.module.css";
 
 const Portfolio = () => {
+  const grid = useRef<HTMLDivElement | null>(null);
+  useAnimation(grid, styles.animateIn, false, 300);
   return (
     <div id="portfolio" className={styles.portfolio}>
       <h2>PORTFOLIO</h2>
       <h3>Some of the projects are from work and some are on my own time.</h3>
-      <div className={styles.grid}>
+      <div ref={grid} className={styles.grid}>
         {assets.map((x, i: number) => (
           <div key={i}>
             <div className={styles.img}>

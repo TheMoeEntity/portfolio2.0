@@ -4,6 +4,7 @@ export const useAnimation = (
   grid: MutableRefObject<HTMLDivElement | null> | HTMLCollectionOf<Element>,
   animation: string,
   shouldLoop: boolean,
+  triggerPositionY: number = 120,
   container?: MutableRefObject<HTMLDivElement | null>
 ) => {
   useEffect(() => {
@@ -19,7 +20,7 @@ export const useAnimation = (
     if (container) {
       if (container.current) {
         let width = container.current;
-        let revealpoint = 120;
+        let revealpoint = triggerPositionY;
         let revealTop = width.getBoundingClientRect().top;
         if (revealTop < height - revealpoint) {
           width.classList.add(animation);

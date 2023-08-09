@@ -13,6 +13,7 @@ const heroStyles: CSSProperties = {
   color: "#272829",
   textAlign: "center",
   fontWeight: "200",
+  // backgroundAttachment: "fixed",
   padding: "70px",
   position: "relative",
   backgroundPosition: "bottom",

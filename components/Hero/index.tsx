@@ -56,6 +56,7 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://twitter.com/NMoses_"
+          className={styles.wobble}
         >
           <i className="fa-brands fa-twitter"></i>
         </a>
@@ -63,6 +64,7 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://instagram.com/NC_Moses"
+          // className={styles.wobble}
         >
           <i className="fa-brands fa-instagram"></i>
         </a>
@@ -70,6 +72,7 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://wa.me/+2348075489362"
+          className={styles.wobble}
         >
           <i className="fa-brands fa-whatsapp"></i>
         </a>
@@ -77,6 +80,7 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://github.com/TheMoeEntity"
+          // className={styles.wobble}
         >
           <i className="fa-brands fa-github"></i>
         </a>
@@ -84,6 +88,7 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://web.facebook.com/Moses.Nwigberi/"
+          className={styles.wobble}
         >
           <i className="fa-brands fa-facebook"></i>
         </a>

@@ -9,7 +9,7 @@ import { useAnimation } from "@/Helpers/useAnimation";
 
 const About = () => {
   const grid = useRef<null | HTMLDivElement>(null);
-  useAnimation(grid, styles.animateIn, false);
+  useAnimation(grid, styles.animateIn, false, 140);
   return (
     <div id="about" className={styles.about}>
       <ParallaxProvider>
@@ -60,8 +60,9 @@ const About = () => {
               <h2>About Me</h2>
               <p>
                 Hey there! Welcome to my world of pixels and code!{` I'm`}{" "}
-                Moses, a frontend web developer with a burning passion for all
-                things iOS and Swift. 🚀 <br /> <br />
+                Moses, or Moe as my friends call me, a frontend web developer
+                with a burning passion for all things iOS and Swift. 🚀 <br />{" "}
+                <br />
                 Picture this: a cup of steaming hot coffee, a keyboard covered
                 in code snippets, and a wild imagination ready to transform
                 ideas into digital reality. {`That's`} me in a nutshell! With a
