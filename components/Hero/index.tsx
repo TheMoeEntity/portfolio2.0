@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import styles from "../../app/page.module.css";
-import me from "../../public/images/2.jpg";
 import TypeEffect from "./TypeEffect";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import { useState } from "react";
@@ -56,7 +54,6 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://twitter.com/NMoses_"
-          className={styles.wobble}
         >
           <i className="fa-brands fa-twitter"></i>
         </a>
@@ -72,7 +69,6 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://wa.me/+2348075489362"
-          className={styles.wobble}
         >
           <i className="fa-brands fa-whatsapp"></i>
         </a>
@@ -88,7 +84,6 @@ const Hero = () => {
           target={`_blank`}
           rel="noopener noreferrer"
           href="https://web.facebook.com/Moses.Nwigberi/"
-          className={styles.wobble}
         >
           <i className="fa-brands fa-facebook"></i>
         </a>

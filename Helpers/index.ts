@@ -137,6 +137,14 @@ export class Helpers {
     const data = stack.join(", ");
     return data;
   };
+  // static getInView = (triggerPositionY:number, container:)=> {
+  //   let checker = container.current;
+  //   let revealpoint = triggerPositionY;
+  //   let revealTop = checker.getBoundingClientRect().top;
+  //   if (revealTop < height - revealpoint) {
+  //     width.classList.add(animation);
+  //   }
+  // }
   static getSingle = async (id: number) => {
     const data = await this.getData2();
     if (!data) return;
@@ -224,8 +232,7 @@ export class Helpers {
         enqueueSnackbar("Message successfully sent", {
           variant: "success",
         });
-      console.log(res.status);
-      console.log(res);
+
       setStatus("Sent successfully");
       setTimeout(() => {
         const resetForm = e.target as HTMLFormElement;
@@ -240,7 +247,6 @@ export class Helpers {
           variant: "error",
         }
       );
-      console.log(error);
     }
     setStatus("SEND MESSAGE");
   };

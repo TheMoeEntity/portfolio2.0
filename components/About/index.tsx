@@ -3,15 +3,19 @@ import Image from "next/image";
 import styles from "../../app/page.module.css";
 import me from "../../public/images/me2.jpg";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import { Helpers, skills } from "@/Helpers";
+import { skills } from "@/Helpers";
 import { useEffect, useRef } from "react";
 import { useAnimations } from "@/Helpers/useAnimation";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
 
 const About = () => {
   const grid = useRef<null | HTMLDivElement>(null);
   useAnimations(130, grid, styles.animateIn, false);
+  const addAnimation = () => {
+    alert("Hello world");
+  };
+  // useEffect(() => {
+  //   addAnimation();
+  // }, []);
 
   return (
     <div id="about" className={styles.about}>
