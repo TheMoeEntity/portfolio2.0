@@ -7,9 +7,9 @@
     "id": 1,
     "images": ["mlaw.png", "craw.png", "craw.png"],
     "details": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
-      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
-      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+      "The official webpage for Pepnops Inc., a leading IT solutions company committed to delivering innovative and customized technology solutions across different industries. Their expert team of developers and engineers are dedicated to providing cutting-edge solutions that are tailored to meet the unique needs of your business",
+      "As a frontend developer at Pepnops, I played a key role in the development of the web page turning the figma design to functional code, from start to final launch.",
+      "The five page website highlights clearly the company's misson and goals, who they are, and the services they offer. In the contact me page there's a form where users fill in the details and send message powered by nodemailer."
     ]
   },
   {
@@ -20,9 +20,9 @@
     "id": 0,
     "images": ["mlaw.png", "craw.png", "craw.png"],
     "details": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
-      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
-      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+      "Official website launching soon for Nosrati Law Group, APC, a boutique client-centered practice specializing in estate planning. Attorney, S. Sophie Nosrati is the managing attorney at Nosrati Law Group, a Beverly Hills, US firm specializing in estate planning.",
+      "The webpage highlights the company's goals, mission, services as well as a little bio about Mrs S. Nosrati",
+      "It also has a nodemailer backend where you can contact them for free consultation."
     ]
   },
   {
@@ -40,22 +40,30 @@
     "id": 2,
     "images": ["craw.png", "craw.png", "craw.png"],
     "details": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
-      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
-      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+      "Crawford Hostel Complaints Management system is a fullstack CRUD platform that provides solutions to student complaints in various hostels. Users can login with matric number or email or create account either as a porter or student.",
+      "I worked collaboratively with a backend developer. The backend is powered by Django REST framework and a PostgreSQL database. ",
+      "There are two account types; porter and student. Student account gives you access to the complaints list for the hostel, create complaints manually or through the OpenAI-powered chatbot as well view current porters in the hostels"
     ]
   },
   {
     "name": "Apple E-commerce Store",
     "url": "https://moestores.vercel.app",
-    "stack": ["NextJs", "JWT auth", "Framer-motion", "Sanity.io", "Cookies"],
-    "date": "29th August, 2023",
+    "stack": [
+      "NextJs",
+      "JWT auth",
+      "Framer-motion",
+      "Sanity.io",
+      "Cookies",
+      "react-slider",
+      "react-paypal"
+    ],
+    "date": "29th August, 2022",
     "id": 3,
     "images": ["store.png", "craw.png", "craw.png"],
     "details": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
-      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
-      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+      "Apple E-commerce store is a fullstack e-commerce web application with a visually appealing design, cart system, user authenticatioin and PayPal support.",
+      "The project was initially created for a frontend developer test for a web developer role I applied for last year but I decided to expand on it's functionalities. ",
+      "Users can login or create an account. The website also has a user profile page where users can see and edit their details as well as view a list of their orders. The site has a robust cart system which is powered by Redux. The cart items' state are persisted by redux-persist and the products and items are fetched directly from Sanity, a powerful content management system."
     ]
   },
   {
@@ -66,9 +74,9 @@
     "id": 4,
     "images": ["dove.png", "craw.png", "craw.png"],
     "details": [
-      "Lorem ipsum dolor sit amet consectetur  adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
-      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
-      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+      "Dove Hospital is an accredited Secondary Care facility by both Lagos State Government and national Health Insurance Scheme. They are also a registered company with the Corporate Affairs Commission (CAC) since October 2014.",
+      "I played a key role in the design and development of the website. The website was created with HTML,CSS, JavaScript and, reluctantly, PHP, a backend language I was not quite comfortable with at that time.",
+      "Visitors to the site can see pictures and details of the various departments in the hospital, mission and vision statement, about DoveHospital, and details of the medical director as well as other important personnel. You can also book an appointment or leave a message."
     ]
   },
   {
@@ -79,9 +87,7 @@
     "id": 5,
     "images": ["aman.png", "craw.png", "craw.png"],
     "details": [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto, perferendis suscipit repudiandae quos facilis nemo voluptas sunt fuga, porro maxime. Omnis neque architecto reprehenderit aspernatur quaerat. Eius reiciendis ut totam consequuntur atque, dolorum ad quaerat ex vitae. Inventore delectus",
-      "tenetur asperiores eaque magnam distinctio culpa itaque fugit, suscipit quisquam eveniet placeat dolore fugiat labore amet quia numquam voluptate, doloremque consequuntur laudantium dolorem? A",
-      "porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio. porro sed nulla explicabo fugit vel minus provident reprehenderit, consequatur voluptas quaerat officiis. Ad, exercitationem nihil. Delectus earum soluta voluptates necessitatibus, consequatur eaque animi sit distinctio temporibus, architecto magni consectetur iste natus pariatur qui quam optio."
+      "The AMAN Awards, presented by the Artiste Managers Association in Nigeria (AMAN), is an annual event that celebrates and recognizes exceptional talents and achievements within the Nigerian music industry. The Awards is dedicated to honoring not only the artists but also the creatives who play a pivotal role in shaping the careers and success stories of these extraordinary musicians."
     ]
   }
 ]

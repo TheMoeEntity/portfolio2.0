@@ -7,6 +7,7 @@ import craw from "../public/images/craw.png";
 import store from "../public/images/store.png";
 import { FormEvent } from "react";
 import axios from "axios";
+import { getDocuments } from "./firebase";
 export type replacements = {
   name: string;
   message: string;
@@ -131,10 +132,13 @@ export class Helpers {
       .substring(0, index)
       .concat(" " + endStr);
   };
-  static fetcher = async () =>
-    await fetch("https://mportfolio-seven.vercel.app/api/staticData").then(
-      (res) => res.json()
-    );
+  static getData = async () => {
+    try {
+      return await getDocuments();
+    } catch (error) {
+      return null;
+    }
+  };
   static setGreeting = (): string => {
     const hour = new Date().getHours();
 
@@ -147,7 +151,9 @@ export class Helpers {
 
     return timeCheck;
   };
-
+  static getClass = (className: string) => {
+    return document.getElementsByClassName(className);
+  };
   static sendMail = async (
     setStatus: any,
     setVal: any,

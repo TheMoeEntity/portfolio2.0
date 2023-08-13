@@ -1,24 +1,25 @@
 "use client";
 import { assets, portfolioData } from "@/Helpers";
-import { useAnimation } from "@/Helpers/useAnimation";
+import { useAnimations } from "@/Helpers/useAnimation";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import styles from "../../app/page.module.css";
 
-const Portfolio = () => {
+const Portfolio = ({ data }: any) => {
   const grid = useRef<HTMLDivElement | null>(null);
-  useAnimation(grid, styles.animateIn, false, 300);
+  useAnimations(300, grid, styles.animateIn, false);
+  console.log(data);
   return (
     <div id="portfolio" className={styles.portfolio}>
       <h2>PORTFOLIO</h2>
       <h3>Some of the projects are from work and some are on my own time.</h3>
       <div ref={grid} className={styles.grid}>
-        {assets.map((x, i: number) => (
+        {data.map((x: portfolioData, i: number) => (
           <div key={i}>
             <div className={styles.img}>
               <Image
-                src={x.image}
+                src={`/images/${x.images[0]}`}
                 alt="hero-image"
                 fill={true}
                 quality={100}
@@ -28,10 +29,10 @@ const Portfolio = () => {
             </div>
             <div className={styles.projectDetails}>
               <div>
-                <h3>{x.title} </h3>
+                <h3>{x.name} </h3>
                 <b>Web /</b> {x.date}
               </div>
-              <Link href={`/portfolio/${x.title}`}>
+              <Link href={`/portfolio/${x.name}`}>
                 <div className={styles.link}>
                   <i className="fa-solid fa-plus"></i>
                 </div>

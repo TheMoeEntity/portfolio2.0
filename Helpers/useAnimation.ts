@@ -1,10 +1,10 @@
 import { MutableRefObject, useEffect } from "react";
 
-export const useAnimation = (
+export const useAnimations = (
+  triggerPositionY: number = 120,
   grid: MutableRefObject<HTMLDivElement | null> | HTMLCollectionOf<Element>,
   animation: string,
   shouldLoop: boolean,
-  triggerPositionY: number = 120,
   container?: MutableRefObject<HTMLDivElement | null>
 ) => {
   useEffect(() => {
