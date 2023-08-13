@@ -8,6 +8,7 @@ import store from "../public/images/store.png";
 import { FormEvent } from "react";
 import axios from "axios";
 import { getDocuments } from "./firebase";
+
 export type replacements = {
   name: string;
   message: string;
@@ -132,7 +133,19 @@ export class Helpers {
       .substring(0, index)
       .concat(" " + endStr);
   };
-  static getData = async () => {
+  static getStack = (stack: string[]): string => {
+    const data = stack.join(", ");
+    return data;
+  };
+  static getSingle = async (id: number) => {
+    const data = await this.getData2();
+    if (!data) return;
+    const single = data.find((x) => {
+      return x.id == id;
+    });
+    return single;
+  };
+  static getData2 = async () => {
     try {
       return await getDocuments();
     } catch (error) {

@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import aman from "../../../public/images/craw.png";
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, useState } from "react";
 import styles from "../../../app/page.module.css";
 import Link from "next/link";
-import { Helpers } from "@/Helpers";
+import { Helpers, portfolioData } from "@/Helpers";
+
 const heroStyles: CSSProperties = {
   width: "100%",
   height: "400px",
@@ -30,7 +31,8 @@ const detail: CSSProperties = {
   background: "var(--main)",
   padding: "60px 0px",
 };
-const PortfolioPage = ({ title }: { title: string }) => {
+const PortfolioPage = ({ data }: any) => {
+  const [details] = useState(data as portfolioData);
   return (
     <>
       <div className={styles.port} style={heroStyles}>
@@ -40,14 +42,14 @@ const PortfolioPage = ({ title }: { title: string }) => {
           <span>
             <Link href={"/"}>home</Link>{" "}
           </span>
-          / Portfolio Details / {Helpers.filterText(title)}
+          / Portfolio Details / {details.name}
         </h2>
       </div>
       <div className={styles.details} style={detail}>
         <div style={{ position: "relative" }} className={styles.screen}>
           <div className={styles.monitor}>
             <Image
-              src={aman}
+              src={`/images/${details.images[0]}`}
               alt="laptop screen"
               fill={true}
               quality={100}
@@ -60,23 +62,9 @@ const PortfolioPage = ({ title }: { title: string }) => {
         <div className={styles.portdetails}>
           <div>
             <p>
-              Crawford Hostel Complaints Management system is a CRUD platform
-              that provides solutions to student complaints in various hostels.
-              The backend is powered by Django REST framework and a PostgreSQL
-              database. <br /> <br />
-              tenetur asperiores eaque magnam distinctio culpa itaque fugit,
-              suscipit quisquam eveniet placeat dolore fugiat labore amet quia
-              numquam voluptate, doloremque consequuntur laudantium dolorem? A
-              <br /> <br /> porro sed nulla explicabo fugit vel minus provident
-              reprehenderit, consequatur voluptas quaerat officiis. Ad,
-              exercitationem nihil. Delectus earum soluta voluptates
-              necessitatibus, consequatur eaque animi sit distinctio temporibus,
-              architecto magni consectetur iste natus pariatur qui quam optio.
-              porro sed nulla explicabo fugit vel minus provident reprehenderit,
-              consequatur voluptas quaerat officiis. Ad, exercitationem nihil.
-              Delectus earum soluta voluptates necessitatibus, consequatur eaque
-              animi sit distinctio temporibus, architecto magni consectetur iste
-              natus pariatur qui quam optio.
+              {details.details[0]} <br /> <br />
+              {details.details[1]}
+              <br /> <br /> {details.details[2]}
             </p>
           </div>
           <div>
@@ -86,17 +74,16 @@ const PortfolioPage = ({ title }: { title: string }) => {
                 <b>Category:</b> Web development.
               </li>
               <li>
-                <b>Tech stack:</b> NextJs, Django, TypeScript, Next-auth,
-                OpenAI, postgreSQL
+                <b>Tech stack:</b> {Helpers.getStack(details.stack)}
               </li>
               <li>
-                <b>Project Date:</b> 27th August, 2023.
+                <b>Project Date:</b> {details.date}
               </li>
               <li>
                 <b>Project URL:</b>{" "}
                 <span>
                   <a href="https://crawfordcomplaints.vercel.app">
-                    https://crawfordcomplaints.vercel.app
+                    {details.url}
                   </a>
                 </span>
               </li>

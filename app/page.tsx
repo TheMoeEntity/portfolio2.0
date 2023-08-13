@@ -8,7 +8,7 @@ import { getDocuments } from "@/Helpers/firebase";
 import styles from "./page.module.css";
 
 export default async function Home() {
-  const data = await Helpers.getData();
+  const data = await Helpers.getData2();
   return (
     <main className={styles.main}>
       <Hero />

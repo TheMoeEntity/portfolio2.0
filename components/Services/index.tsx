@@ -17,7 +17,7 @@ const Services = () => {
         opacity: 1,
         transition: {
           duration: 1,
-          delay: 1,
+          delay: 0.5,
           type: "spring",
           bounce: 0.4,
         },

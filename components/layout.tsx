@@ -8,6 +8,7 @@ import { sideassets, sideAssets } from "@/Helpers";
 import Link from "next/link";
 import Contact from "./Contact";
 import { SnackbarProvider } from "notistack";
+import { DataProvider } from "@/Helpers/context";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
@@ -80,29 +81,31 @@ const Layout = ({ children }: { children: ReactNode }) => {
       classes={{ containerRoot: "z-alert" }}
       anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
     >
-      <section>
-        {/* <Header /> */}
-        <div className={`${styles.sidebar}`}>
-          {sideIcons.map((x) => (
-            <div
-              key={x.id}
-              onClick={() => x.link}
-              className={x.active ? styles.active : ""}
-            >
-              <Link href={x.link}>
-                <i className={x.title}></i>
-              </Link>
-            </div>
-          ))}
-        </div>
-        <Cursor />
-        {children}
-        <Contact />
-        <Script
-          src="https://kit.fontawesome.com/4ef8c63dd7.js"
-          crossOrigin="anonymous"
-        />
-      </section>
+      <DataProvider>
+        <section>
+          {/* <Header /> */}
+          <div className={`${styles.sidebar}`}>
+            {sideIcons.map((x) => (
+              <div
+                key={x.id}
+                onClick={() => x.link}
+                className={x.active ? styles.active : ""}
+              >
+                <Link href={x.link}>
+                  <i className={x.title}></i>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <Cursor />
+          {children}
+          <Contact />
+          <Script
+            src="https://kit.fontawesome.com/4ef8c63dd7.js"
+            crossOrigin="anonymous"
+          />
+        </section>
+      </DataProvider>
     </SnackbarProvider>
   );
 };

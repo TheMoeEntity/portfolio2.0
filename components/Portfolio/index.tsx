@@ -32,7 +32,7 @@ const Portfolio = ({ data }: any) => {
                 <h3>{x.name} </h3>
                 <b>Web /</b> {x.date}
               </div>
-              <Link href={`/portfolio/${x.name}`}>
+              <Link href={`/portfolio/${x.id}`}>
                 <div className={styles.link}>
                   <i className="fa-solid fa-plus"></i>
                 </div>
