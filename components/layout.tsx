@@ -84,7 +84,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     >
       <DataProvider>
         <section>
-          <Header />
+          {/* <Header /> */}
           <div className={`${styles.sidebar}`}>
             {sideIcons.map((x) => (
               <div
