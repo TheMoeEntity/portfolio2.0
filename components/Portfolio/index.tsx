@@ -8,7 +8,7 @@ import styles from "../../app/page.module.css";
 
 const Portfolio = ({ data }: any) => {
   const grid = useRef<HTMLDivElement | null>(null);
-  useAnimations(300, grid, styles.animateIn, true);
+  useAnimations(300, grid, styles.animateIn, false);
 
   return (
     <div id="portfolio" className={styles.portfolio}>
