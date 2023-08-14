@@ -9,6 +9,7 @@ import Link from "next/link";
 import Contact from "./Contact";
 import { SnackbarProvider } from "notistack";
 import { DataProvider } from "@/Helpers/context";
+import Header from "./Header";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
@@ -83,7 +84,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     >
       <DataProvider>
         <section>
-          {/* <Header /> */}
+          <Header />
           <div className={`${styles.sidebar}`}>
             {sideIcons.map((x) => (
               <div

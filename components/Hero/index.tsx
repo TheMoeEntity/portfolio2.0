@@ -4,6 +4,7 @@ import TypeEffect from "./TypeEffect";
 import { ParallaxProvider, ParallaxBanner } from "react-scroll-parallax";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+
 const Hero = () => {
   const router = useRouter();
   const [sidebar, setSideBar] = useState<boolean>(false);
