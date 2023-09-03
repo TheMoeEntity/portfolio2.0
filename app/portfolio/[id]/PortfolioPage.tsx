@@ -82,12 +82,9 @@ const PortfolioPage = ({ data }: any) => {
               <li>
                 <b>Project URL:</b>{" "}
                 <span>
-                  <a href="https://crawfordcomplaints.vercel.app">
-                    {details.url}
-                  </a>
+                  <a href={details.url}>{details.url}</a>
                 </span>
               </li>
-              <li></li>
             </ul>
           </div>
         </div>
